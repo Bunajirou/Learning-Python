@@ -37,4 +37,3 @@ y = (1 - a * x ) / b
 print('x0 =',x)
 print('y0 =','{:.0f}'.format(y))
 print('x = {0} + {1}t, y = {2} - {3}t'.format(x,b,y,a))
-#連携確認用メッセージ
