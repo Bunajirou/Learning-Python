@@ -32,3 +32,4 @@ ans_d = (a * indet) % n
 
 print('({0},{1})\n'
       '({2},{3}) (mod {4})\n'.format(ans_a,ans_b,ans_c,ans_d,n))
+#連携確認
