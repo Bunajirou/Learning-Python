@@ -37,4 +37,4 @@ print('({0},{1})\n'
 
 x = (a*m + b*n) % N
 y = (c*m + d*n) % N
-print('x = %d, y = %d' % (x,y))
+print('x = {0}, y = {1} (mod {2})'.format(x,y,N))
