@@ -16,8 +16,6 @@ print('{0}x + {1}y = {2}\n'
 det = a*d - b*c  #　　det = 行列式
 det = det % N
 
-print('|A| = {0} (mod {1})\n'.format(det,N))
-
 ans = 0  #  ループを回すためにとりあえずの代入
 x = 0
 
@@ -32,8 +30,6 @@ a = (d * indet) % N
 b = (-b * indet) % N
 c = (-c * indet) % N
 d = (tmp * indet) % N
-print('({0},{1})\n'
-      '({2},{3}) (mod {4})\n'.format(a,b,c,d,N))
 
 x = (a*m + b*n) % N
 y = (c*m + d*n) % N
