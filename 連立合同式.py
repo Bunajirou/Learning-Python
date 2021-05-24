@@ -33,4 +33,5 @@ d = (tmp * indet) % n
 
 x = (a * p + b * q) % n
 y = (c * p + d * q) % n
+
 print('(x,y) = ({0},{1}) (mod {2})'.format(x,y,n))
