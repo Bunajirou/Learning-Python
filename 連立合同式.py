@@ -15,7 +15,7 @@ print('({0} {1})(x)   ({2})\n'
 
 det = a*d - b*c  #　　det = 行列式
 det = det % n
-
+det = int(input('det='))
 A = det
 B = n
 
@@ -44,6 +44,7 @@ for j in range(i, 0, -1):
     tmp = x2
     x2 = x1
     x3 = tmp
+
 indet = x3  #  indet = 行列式の逆数
 
 tmp = a
