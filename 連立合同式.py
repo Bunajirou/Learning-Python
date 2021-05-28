@@ -27,11 +27,12 @@ while( R != 0 ):  #  ユークリッドの互除法
     Q = A // B
     R = A % B
     
-    #print('({0}) {1} = {2} * {3} + {4}'.format(i, A, Q, B, R))
+    print('({0}) {1} = {2} * {3} + {4}'.format(i, A, Q, B, R))
     Qlist.append(Q)
     A = B
     B = R
     i += 1
+
 #  ユークリッドの互除法を遡る
 i = i - 2
 x1 = Qlist[i]
@@ -43,7 +44,6 @@ for j in range(i, 0, -1):
     tmp = x2
     x2 = x1
     x3 = tmp
-
 indet = x3  #  indet = 行列式の逆数
 
 tmp = a
