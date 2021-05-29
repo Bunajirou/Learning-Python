@@ -18,7 +18,7 @@ det = det % n
 swap_flag = 0
 A = det
 B = n
-print(A,B)
+
 R = 1  
 i = 0  #  式の番号
 Qlist = []
@@ -27,7 +27,7 @@ while( R != 0 ):  #  ユークリッドの互除法
     Q = A // B
     R = A % B
     
-    print('({0}) {1} = {2} * {3} + {4}'.format(i, A, Q, B, R))
+    #print('({0}) {1} = {2} * {3} + {4}'.format(i, A, Q, B, R))
     Qlist.append(Q)
     A = B
     B = R
@@ -47,7 +47,6 @@ for j in range(i, 0, -1):
 indet = x3
 
 if( i % 2 == 1 ): indet = -indet
-print(indet)
 
 tmp = a
 a = (d * indet) % n
@@ -58,4 +57,5 @@ d = (tmp * indet) % n
 x = (a * p + b * q) % n
 y = (c * p + d * q) % n
 
-print('( x, y ) = ({0},{1}) (mod {2})\n'.format(x,y,n))
+if(A == 1): print('(x,y) = ({0},{1}) (mod {2})\n'.format(x,y,n))
+else: print('解けません')
