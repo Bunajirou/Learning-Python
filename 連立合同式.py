@@ -18,7 +18,7 @@ det = det % n
 swap_flag = 0
 A = det
 B = n
-
+print(A,B)
 R = 1  
 i = 0  #  式の番号
 Qlist = []
@@ -46,9 +46,7 @@ for j in range(i, 0, -1):
     x3 = tmp
 indet = x3
 
-if( n > det ): i -= i
 if( i % 2 == 1 ): indet = -indet
-
 print(indet)
 
 tmp = a
