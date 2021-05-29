@@ -58,4 +58,4 @@ x = (a * p + b * q) % n
 y = (c * p + d * q) % n
 
 if(A == 1): print('(x,y) = ({0},{1}) (mod {2})\n'.format(x,y,n))
-else: print('解けません')
+else: print('解がありません')
