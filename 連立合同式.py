@@ -15,9 +15,14 @@ print('({0} {1})(x)   ({2})\n'
 
 det = a*d - b*c  #　　det = 行列式
 det = det % n
-det = int(input('det='))
+swap_flag = 0
 A = det
 B = n
+
+if( B > A ):
+    tmp = A
+    A = B
+    B = tmp
 
 R = 1  
 i = 0  #  式の番号
@@ -44,8 +49,10 @@ for j in range(i, 0, -1):
     tmp = x2
     x2 = x1
     x3 = tmp
+indet = x3
 
-indet = x3  #  indet = 行列式の逆数
+if( n > det ): i -= i
+if( i % 2 == 1 ): indet = -indet
 
 tmp = a
 a = (d * indet) % n
