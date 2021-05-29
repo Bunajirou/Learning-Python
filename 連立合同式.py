@@ -19,11 +19,6 @@ swap_flag = 0
 A = det
 B = n
 
-if( B > A ):
-    tmp = A
-    A = B
-    B = tmp
-
 R = 1  
 i = 0  #  式の番号
 Qlist = []
@@ -53,6 +48,8 @@ indet = x3
 
 if( n > det ): i -= i
 if( i % 2 == 1 ): indet = -indet
+
+print(indet)
 
 tmp = a
 a = (d * indet) % n
