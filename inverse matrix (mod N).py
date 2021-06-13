@@ -20,8 +20,8 @@ ans = 0  #  ループを回すためにとりあえずの代入
 x = 0
 
 while(ans != 1):
-    x += 1
-    ans = (det * x) % n
+      x += 1
+      ans = (det * x) % n
 
 indet = x  #  indet = 行列式の逆数
 
